@@ -1,8 +1,47 @@
 
-I. Install Python, VirtualEnv, Django
+1. Install Python, VirtualEnv, Django:
     # We have 2 folder directory (Django and Django main app)
 
-II. Create Django (Main APP)
+2. Create Django (Main APP):
     * Command: python manage.py startapp main
-    - Register app in settings.py
+    + Register app in settings.py
         INSTALLED_APPS = ['main']
+
+3. Django Run Server:
+    - * Command: python manage.py runserver
+
+4. Django DB connection and create Super User admin:
+    + Config Database in settings.py
+        DATABASES = []
+        # MYSQL connection:
+            - * Command: pip install mysqlclient
+    + * Command: python manage.py migrate
+    + Create Super User: * Command: python manage.py createsuperuser
+        - Login: http://127.0.0.1:8000/admin
+
+5. Install Django API:
+    + * Command: pip install djangorestframework
+        - Register App settings.py
+            INSTALLED_APPS = ['rest_framework']
+    + Create Serializer serializers.py in folder main app
+        - Code: serializers.py and views.py <Example>
+
+    + Create urls.py file:
+        - EX:
+            from django.urls import path
+            from . import views
+
+            urlpatterns = [
+                path('teacher/', views.TeacherList.as_view()),
+            ]
+    + In urls.py django project folder
+    + Generate data with static method and auto method: => RetrieveUpdateDestroyAPIView
+    + Api rest framework permissions
+    + Api Token: INSTALLED_APPS = ['rest_framework.authtoken']
+        - REST_FRAMEWORK = {
+                'DEFAULT_AUTHENTICATION_CLASSES': [
+                    'rest_framework.authentication.TokenAuthentication',
+                ]
+            }
+        - * Command: python manage.py migrate
+        - * Command: python manage.py drf_create_token -r admin
