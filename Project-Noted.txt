@@ -1,0 +1,8 @@
+
+I. Install Python, VirtualEnv, Django
+    # We have 2 folder directory (Django and Django main app)
+
+II. Create Django (Main APP)
+    * Command: python manage.py startapp main
+    - Register app in settings.py
+        INSTALLED_APPS = ['main']
