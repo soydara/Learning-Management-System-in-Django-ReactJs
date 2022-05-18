@@ -11,6 +11,9 @@ import Contact from "./components/Contact";
 import CourseDetail from "./components/CourseDetail";
 import Course from "./components/Course";
 import TeacherDetail from "./components/TeacherDetail";
+import PopularCourse from "./components/PopularCourse";
+import PopularTeacher from "./components/PopularTeacher";
+import CategoryCourse from "./components/CategoryCourse";
 // User Page
 import Login from "./components/users/Login";
 import Register from "./components/users/Register";
@@ -41,6 +44,9 @@ function App() {
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/course/detail/:course_id" element={<CourseDetail/>}/>
                 <Route path="/teacher/detail/:teacher_id" element={<TeacherDetail/>}/>
+                <Route path="/popular/course" element={<PopularCourse/>}/>
+                <Route path="/popular/teacher" element={<PopularTeacher/>}/>
+                <Route path="/category/:category_slug" element={<CategoryCourse/>}/>
                 {/*User Page*/}
                 <Route path="/user/login" element={<Login/>}/>
                 <Route path="/user/register" element={<Register/>}/>

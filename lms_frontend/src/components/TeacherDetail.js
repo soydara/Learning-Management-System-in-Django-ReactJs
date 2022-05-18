@@ -12,7 +12,7 @@ function TeacherDetail() {
                 <div className="col-8">
                     <h3>Teacher Name: Soy Dara {teacher_id}</h3>
                     <p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card</p>
-                    <p className="fw-bold">Skills: <Link to="#">PHP</Link>,<Link to="#">Python</Link>,<Link to="#">Java</Link></p>
+                    <p className="fw-bold">Skills: <Link to="/category/php">PHP</Link>, <Link to="/category/python">Python</Link>, <Link to="/category/java">Java</Link></p>
                     <p className="fw-bold">Recent Course: <Link to="#">React JS</Link></p>
                     <p className="fw-bold">Ratting: 4/5</p>
                 </div>
