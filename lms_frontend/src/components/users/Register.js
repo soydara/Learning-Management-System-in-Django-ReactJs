@@ -6,7 +6,7 @@ function Register() {
             <div className="row">
                 <div className="col-6 offset-3">
                     <div className="card">
-                        <h5 className="card-header">Register</h5>
+                        <h5 className="card-header">User Register</h5>
                         <div className="card-body">
                             <form action="#" method="POST">
                                 <div className="mb-3 text-start">

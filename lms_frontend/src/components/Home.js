@@ -12,12 +12,12 @@ function Home() {
                 <div className="row">
                     <div className="col-md-3">
                         <div className="card">
-                            <Link to="course/detail/1">
+                            <Link to="/course/detail/1">
                                 <img src="logo512.png" className="card-img-top" alt="Photo"/>
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <Link to="course/detail/1">
+                                    <Link to="/course/detail/1">
                                         Course Title
                                     </Link>
                                 </h5>
@@ -26,12 +26,12 @@ function Home() {
                     </div>
                     <div className="col-md-3">
                         <div className="card">
-                            <Link to="course/detail/1">
+                            <Link to="/course/detail/1">
                                 <img src="logo512.png" className="card-img-top" alt="Photo"/>
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <Link to="course/detail/1">
+                                    <Link to="/course/detail/1">
                                         Course Title
                                     </Link>
                                 </h5>
@@ -40,12 +40,12 @@ function Home() {
                     </div>
                     <div className="col-md-3">
                         <div className="card">
-                            <Link to="course/detail/1">
+                            <Link to="/course/detail/1">
                                 <img src="logo512.png" className="card-img-top" alt="Photo"/>
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <Link to="course/detail/1">
+                                    <Link to="/course/detail/1">
                                         Course Title
                                     </Link>
                                 </h5>
@@ -54,12 +54,12 @@ function Home() {
                     </div>
                     <div className="col-md-3">
                         <div className="card">
-                            <Link to="course/detail/1">
+                            <Link to="/course/detail/1">
                                 <img src="logo512.png" className="card-img-top" alt="Photo"/>
                             </Link>
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <Link to="course/detail/1">
+                                    <Link to="/course/detail/1">
                                         Course Title
                                     </Link>
                                 </h5>

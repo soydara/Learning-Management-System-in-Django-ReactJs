@@ -10,6 +10,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import CourseDetail from "./components/CourseDetail";
 import Course from "./components/Course";
+import TeacherDetail from "./components/TeacherDetail";
 // User Page
 import Login from "./components/users/Login";
 import Register from "./components/users/Register";
@@ -33,14 +34,16 @@ function App() {
         <div className="App">
             <Header />
             <Routes>
+                {/*Front Page*/}
                 <Route path="/" element={<Home/>}/>
-                <Route path="course" element={<Course/>}/>
-                <Route path="about" element={<About/>}/>
-                <Route path="contact" element={<Contact/>}/>
-                <Route path="course/detail/:course_id" element={<CourseDetail/>}/>
+                <Route path="/course" element={<Course/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/course/detail/:course_id" element={<CourseDetail/>}/>
+                <Route path="/teacher/detail/:teacher_id" element={<TeacherDetail/>}/>
                 {/*User Page*/}
-                <Route path="login" element={<Login/>}/>
-                <Route path="register" element={<Register/>}/>
+                <Route path="/user/login" element={<Login/>}/>
+                <Route path="/user/register" element={<Register/>}/>
                 <Route path="/user/dashboard" element={<Dashboard/>}/>
                 <Route path="/user/my-courses" element={<MyCourse/>}/>
                 <Route path="/user/favorite-courses" element={<FavoriteCourse/>}/>
@@ -48,8 +51,8 @@ function App() {
                 <Route path="/user/profile-setting" element={<ProfileSetting/>}/>
                 <Route path="/user/change-password" element={<ChangePassword/>}/>
                 {/*Teacher Page*/}
-                <Route path="login" element={<TeacherLogin/>}/>
-                <Route path="register" element={<TeacherRegister/>}/>
+                <Route path="/teacher/login" element={<TeacherLogin/>}/>
+                <Route path="/teacher/register" element={<TeacherRegister/>}/>
                 <Route path="/teacher/dashboard" element={<TeacherDashboard/>}/>
                 <Route path="/teacher/my-courses" element={<TeacherMyCourse/>}/>
                 <Route path="/teacher/add-courses" element={<TeacherAddCourse/>}/>

@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Header() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <Link className="navbar-brand" to="/">FTB Online</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon">
 
                     </span>
@@ -15,11 +17,9 @@ function Header() {
                     <div className="navbar-nav ms-auto">
                         <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         <Link className="nav-link" to="course">Courses</Link>
-                        <Link className="nav-link" to="#">Teachers</Link>
                         <Link className="nav-link" to="about">About</Link>
                         <Link className="nav-link" to="contact">Contact</Link>
-                        <Link className="nav-link" to="login">Login</Link>
-                        <Link className="nav-link" to="register">Register</Link>
+
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,7 +27,10 @@ function Header() {
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item" to="/teacher/dashboard">Dashboard</Link></li>
-                                <li><Link className="dropdown-item" to="/teacher/profile-setting">Profile Setting</Link></li>
+                                <li><Link className="dropdown-item" to="/teacher/login">Teacher Login</Link></li>
+                                <li><Link className="dropdown-item" to="/teacher/register">Teacher Register</Link></li>
+                                <li><Link className="dropdown-item" to="/teacher/profile-setting">Profile Setting</Link>
+                                </li>
                                 <li><Link className="dropdown-item" to="/teacher/logout">Logout</Link></li>
                             </ul>
                         </li>
@@ -38,6 +41,8 @@ function Header() {
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item" to="/user/dashboard">Dashboard</Link></li>
+                                <li><Link className="dropdown-item" to="/user/login">Login</Link></li>
+                                <li><Link className="dropdown-item" to="/user/register">Register</Link></li>
                                 <li><Link className="dropdown-item" to="/user/profile-setting">Profile Setting</Link></li>
                                 <li><Link className="dropdown-item" to="/user/logout">Logout</Link></li>
                             </ul>
