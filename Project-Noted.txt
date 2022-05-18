@@ -44,4 +44,10 @@
                 ]
             }
         - * Command: python manage.py migrate
-        - * Command: python manage.py drf_create_token -r admin
+        - * Command: python manage.py drf_create_token -r <username>
+
+6. Install ReactJS:
+    - * Command: npx create-react-app <name_app>
+        * npx create-react-app my-app
+        * cd my-app
+        * npm start

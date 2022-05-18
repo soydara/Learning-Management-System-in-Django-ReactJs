@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
+    # path('', admin.site.urls),
     path('admin/', admin.site.urls),
     path('api/', include('main.urls')),
-    path('api-auth/', include('rest_framework.urls')),
+    path('api-auth/', include('rest_framework.urls'), name='api-token-auth'),
+
 ]

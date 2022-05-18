@@ -6,7 +6,7 @@ from rest_framework import permissions
 from .serializers import TeacherSerializer
 from . import models
 
-from rest_framework.authentication import TokenAuthentication
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 
@@ -17,14 +17,18 @@ from rest_framework.permissions import IsAuthenticated
 #         return Response(serializer.data)
 
 class TeacherList(generics.ListCreateAPIView):
-    authentication_classes = [TokenAuthentication]
+    # access permission and token
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
     permission_classes = [IsAuthenticated]
+
     queryset = models.Teacher.objects.all()
     serializer_class = TeacherSerializer
 
 
 class TeacherDetail(generics.RetrieveUpdateDestroyAPIView):
-    authentication_classes = [TokenAuthentication]
+    # access permission and token
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
     permission_classes = [IsAuthenticated]
+
     queryset = models.Teacher.objects.all()
     serializer_class = TeacherSerializer
