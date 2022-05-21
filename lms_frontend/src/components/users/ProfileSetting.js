@@ -16,7 +16,7 @@ function ProfileSetting() {
                         </div>
                         <div className="card-body">
                             <form action="#" method="POST">
-                            <div className="mb-3 text-start">
+                                <div className="mb-3 text-start">
                                     <label htmlFor="full_name" className="form-label">Full Name</label>
                                     <input type="text" className="form-control" name="full_name" id="full_name"/>
                                 </div>
@@ -28,11 +28,11 @@ function ProfileSetting() {
                                     <label htmlFor="username" className="form-label">Username</label>
                                     <input type="text" className="form-control" name="username" id="username"/>
                                 </div>
-                                 <div className="mb-3 text-start">
+                                <div className="mb-3 text-start">
                                     <label htmlFor="photo" className="form-label">Profile Photo</label>
                                     <input type="file" className="form-control" name="photo" id="photo"/>
                                 </div>
-                                 <div className="mb-3 text-start">
+                                <div className="mb-3 text-start">
                                     <label htmlFor="interest" className="form-label">Interest</label>
                                     <input type="text" className="form-control" name="interest" id="interest"/>
                                 </div>
@@ -42,8 +42,8 @@ function ProfileSetting() {
 
                                     </textarea>
                                 </div>
-                            <button type="submit" className="btn btn-primary">Update</button>
-                        </form>
+                                <button type="submit" className="btn btn-primary">Update</button>
+                            </form>
                         </div>
                     </div>
                 </div>

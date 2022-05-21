@@ -16,20 +16,20 @@ function ChangePassword() {
                         </div>
                         <div className="card-body">
                             <form action="#" method="POST">
-                            <div className="mb-3 text-start">
-                                <label htmlFor="old_password" className="form-label">Old Password</label>
-                                <input type="password" className="form-control" name="old_password" id="old_password"/>
-                            </div>
-                             <div className="mb-3 text-start">
-                                <label htmlFor="new_password" className="form-label">New Password</label>
-                                <input type="password" className="form-control" name="new_password" id="new_password"/>
-                            </div>
-                             <div className="mb-3 text-start">
-                                <label htmlFor="confirm_password" className="form-label">Confirm Password</label>
-                                <input type="password" className="form-control" name="confirm_password" id="confirm_password"/>
-                            </div>
-                            <button type="submit" className="btn btn-primary">Change</button>
-                        </form>
+                                <div className="mb-3 text-start">
+                                    <label htmlFor="old_password" className="form-label">Old Password</label>
+                                    <input type="password" className="form-control" name="old_password" id="old_password"/>
+                                </div>
+                                <div className="mb-3 text-start">
+                                    <label htmlFor="new_password" className="form-label">New Password</label>
+                                    <input type="password" className="form-control" name="new_password" id="new_password"/>
+                                </div>
+                                <div className="mb-3 text-start">
+                                    <label htmlFor="confirm_password" className="form-label">Confirm Password</label>
+                                    <input type="password" className="form-control" name="confirm_password" id="confirm_password"/>
+                                </div>
+                                <button type="submit" className="btn btn-primary">Change</button>
+                            </form>
                         </div>
                     </div>
                 </div>

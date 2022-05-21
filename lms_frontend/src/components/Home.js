@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
 import {Link} from "react-router-dom";
+import {useEffect} from "react";
 
 function Home() {
+    useEffect(()=>{
+       document.title = 'LMS | Home';
+    });
     return (
         <div>
             <div className="container mt-4">
